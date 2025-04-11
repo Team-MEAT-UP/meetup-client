@@ -1,5 +1,11 @@
+import KakaoMapView from "../features/mapView/ui/KakaoMapView";
+
 const MapViewPage = () => {
-  return <div>맵뷰</div>;
+  return (
+    <div>
+      <KakaoMapView />
+    </div>
+  );
 };
 
 export default MapViewPage;
