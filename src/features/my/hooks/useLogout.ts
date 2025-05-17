@@ -9,6 +9,7 @@ export const useLogout = () => {
     mutationFn: logout,
     onSuccess: () => {
       navigate("/");
+      localStorage.removeItem("user-storage");
     },
     onError: error => {
       console.error("로그아웃 실패: ", error);
