@@ -20,6 +20,9 @@ importers:
       '@tanstack/react-query':
         specifier: ^5.75.5
         version: 5.75.5(react@18.3.1)
+      '@tanstack/react-query-devtools':
+        specifier: ^5.101.0
+        version: 5.101.0(@tanstack/react-query@5.75.5(react@18.3.1))(react@18.3.1)
       '@vercel/analytics':
         specifier: ^1.5.0
         version: 1.5.0(react@18.3.1)
@@ -73,7 +76,7 @@ importers:
         version: 1.0.7(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.14.0)(typescript@5.7.3)))
       zustand:
         specifier: ^5.0.3
-        version: 5.0.3(@types/react@18.3.20)(react@18.3.1)
+        version: 5.0.3(@types/react@18.3.20)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1))
     devDependencies:
       '@eslint/js':
         specifier: ^8.57.0
@@ -980,6 +983,15 @@ packages:
 
   '@tanstack/query-core@5.75.5':
     resolution: {integrity: sha512-kPDOxtoMn2Ycycb76Givx2fi+2pzo98F9ifHL/NFiahEDpDwSVW6o12PRuQ0lQnBOunhRG5etatAhQij91M3MQ==}
+
+  '@tanstack/query-devtools@5.101.0':
+    resolution: {integrity: sha512-MVqw17k08RQtGGLEL654+dX/btbX9p/8WjkznO//zusLTMaObxi3Q+MoFwGVkC9K3tqjn8qrrNhJevXx4fJTeQ==}
+
+  '@tanstack/react-query-devtools@5.101.0':
+    resolution: {integrity: sha512-cpZA0+WqKXwrwMfiWZEGGF6QrIWVQFbhBtxqDF5sQsAfrFf47HIE6fiPbQU3wyAUEN2+7UNqLCQe7oG6m3f93w==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.101.0
+      react: ^18 || ^19
 
   '@tanstack/react-query@5.75.5':
     resolution: {integrity: sha512-QrLCJe40BgBVlWdAdf2ZEVJ0cISOuEy/HKupId1aTKU6gPJZVhSvZpH+Si7csRflCJphzlQ77Yx6gUxGW9o0XQ==}
@@ -2943,6 +2955,11 @@ packages:
       '@types/react':
         optional: true
 
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
@@ -3916,6 +3933,14 @@ snapshots:
       '@sinonjs/commons': 3.0.1
 
   '@tanstack/query-core@5.75.5': {}
+
+  '@tanstack/query-devtools@5.101.0': {}
+
+  '@tanstack/react-query-devtools@5.101.0(@tanstack/react-query@5.75.5(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@tanstack/query-devtools': 5.101.0
+      '@tanstack/react-query': 5.75.5(react@18.3.1)
+      react: 18.3.1
 
   '@tanstack/react-query@5.75.5(react@18.3.1)':
     dependencies:
@@ -6064,6 +6089,11 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.20
 
+  use-sync-external-store@1.6.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+    optional: true
+
   util-deprecate@1.0.2: {}
 
   v8-compile-cache-lib@3.0.1: {}
@@ -6158,7 +6188,8 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zustand@5.0.3(@types/react@18.3.20)(react@18.3.1):
+  zustand@5.0.3(@types/react@18.3.20)(react@18.3.1)(use-sync-external-store@1.6.0(react@18.3.1)):
     optionalDependencies:
       '@types/react': 18.3.20
       react: 18.3.1
+      use-sync-external-store: 1.6.0(react@18.3.1)
