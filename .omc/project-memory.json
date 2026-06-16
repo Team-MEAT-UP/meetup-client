@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1781176157216,
+  "lastScanned": 1781612098922,
   "projectRoot": "/Users/seongtaehyeon/Desktop/사이드프로젝트/moisam-client",
   "techStack": {
     "languages": [
@@ -47,7 +47,7 @@
     "runtime": null
   },
   "build": {
-    "buildCommand": "npx tsc --noEmit -p tsconfig.json 2>&1 | head -30",
+    "buildCommand": "pnpm build",
     "testCommand": "pnpm test",
     "lintCommand": "pnpm lint",
     "devCommand": "pnpm dev",
@@ -83,7 +83,7 @@
       "path": "dist",
       "purpose": "Distribution/build output",
       "fileCount": 5,
-      "lastAccessed": 1781176157202,
+      "lastAccessed": 1781612098914,
       "keyFiles": [
         "favicon.png",
         "favicon.svg",
@@ -96,7 +96,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 4,
-      "lastAccessed": 1781176157202,
+      "lastAccessed": 1781612098914,
       "keyFiles": [
         "favicon.png",
         "favicon.svg",
@@ -108,7 +108,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1781176157207,
+      "lastAccessed": 1781612098916,
       "keyFiles": [
         "vite-env.d.ts"
       ]
@@ -117,7 +117,7 @@
       "path": "dist/assets",
       "purpose": "Static assets",
       "fileCount": 18,
-      "lastAccessed": 1781176157209,
+      "lastAccessed": 1781612098916,
       "keyFiles": [
         "TMap-mEUW5Hcx.svg",
         "car-DErW1ZGb.webp",
@@ -128,7 +128,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 3,
-      "lastAccessed": 1781176157209,
+      "lastAccessed": 1781612098917,
       "keyFiles": [
         "App.tsx",
         "index.css",
@@ -139,21 +139,21 @@
       "path": "src/assets",
       "purpose": "Static assets",
       "fileCount": 1,
-      "lastAccessed": 1781176157210,
+      "lastAccessed": 1781612098917,
       "keyFiles": []
     },
     "src/components": {
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 0,
-      "lastAccessed": 1781176157210,
+      "lastAccessed": 1781612098917,
       "keyFiles": []
     },
     "src/lib": {
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 1,
-      "lastAccessed": 1781176157210,
+      "lastAccessed": 1781612098917,
       "keyFiles": [
         "utils.ts"
       ]
@@ -162,7 +162,7 @@
       "path": "src/pages",
       "purpose": "Page components",
       "fileCount": 14,
-      "lastAccessed": 1781176157211,
+      "lastAccessed": 1781612098917,
       "keyFiles": [
         "DetailPage.tsx",
         "FindPage.tsx",
@@ -184,9 +184,21 @@
       "type": "file"
     },
     {
+      "path": "src/pages/HistoryPage.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1781179555527,
+      "type": "file"
+    },
+    {
       "path": "src/app/App.tsx",
       "accessCount": 6,
       "lastAccessed": 1781179306402,
+      "type": "file"
+    },
+    {
+      "path": "src/app/routes/routes.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1781179536046,
       "type": "file"
     },
     {
@@ -214,6 +226,12 @@
       "type": "file"
     },
     {
+      "path": "src/features/history/hooks/useUserEvents.ts",
+      "accessCount": 3,
+      "lastAccessed": 1781179385158,
+      "type": "file"
+    },
+    {
       "path": "src/shared/api/api.ts",
       "accessCount": 2,
       "lastAccessed": 1781007099682,
@@ -238,21 +256,9 @@
       "type": "file"
     },
     {
-      "path": "src/pages/HistoryPage.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1781176376499,
-      "type": "file"
-    },
-    {
       "path": "src/shared/ui/AppInToss/MenuBottomSheet.tsx",
       "accessCount": 2,
       "lastAccessed": 1781176561553,
-      "type": "file"
-    },
-    {
-      "path": "src/app/routes/routes.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1781179290985,
       "type": "file"
     },
     {
@@ -364,12 +370,6 @@
       "type": "file"
     },
     {
-      "path": "src/features/history/hooks/useUserEvents.ts",
-      "accessCount": 1,
-      "lastAccessed": 1781007042281,
-      "type": "file"
-    },
-    {
       "path": "src/shared/ui/BottomSheet/BottomSheet.tsx",
       "accessCount": 1,
       "lastAccessed": 1781008529248,
@@ -433,6 +433,12 @@
       "path": "src/features/find/ui/FindContainer.tsx",
       "accessCount": 1,
       "lastAccessed": 1781179305529,
+      "type": "file"
+    },
+    {
+      "path": "AppInToss.md",
+      "accessCount": 1,
+      "lastAccessed": 1781613108873,
       "type": "file"
     }
   ],
