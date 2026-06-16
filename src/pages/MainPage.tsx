@@ -90,7 +90,7 @@ const MainPage = () => {
           frameBorder="0"
           src="https://badge.disquiet.io/vote-badge?productUrlSlug=모이삼&mode=light"
           className="w-[300px] h-[80px] overflow-visible ml-auto -mr-[100px] pointer-events-auto"
-          style={{ overflow: 'visible' }}
+          style={{ overflow: "visible" }}
         />
       </div>
     </div>

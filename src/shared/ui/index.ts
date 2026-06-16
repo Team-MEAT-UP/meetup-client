@@ -15,3 +15,4 @@ export * from "./Dropdown";
 export * from "./PointChip";
 export * from "./MeetPointCard";
 export * from "./AnimatedSection";
+export * from "./AppInToss";
