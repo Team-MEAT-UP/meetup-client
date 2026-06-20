@@ -9,3 +9,4 @@ export * from "./toValidScore";
 export * from "./formatName";
 export * from "./validateEventName";
 export * from "./gtag";
+export * from "./usePlatform";

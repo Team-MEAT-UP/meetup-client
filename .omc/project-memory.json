@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1781612098922,
+  "lastScanned": 1781944874734,
   "projectRoot": "/Users/seongtaehyeon/Desktop/사이드프로젝트/moisam-client",
   "techStack": {
     "languages": [
@@ -24,12 +24,12 @@
     "frameworks": [
       {
         "name": "react",
-        "version": "18.2.0",
+        "version": "18.3.1",
         "category": "frontend"
       },
       {
         "name": "react-dom",
-        "version": "18.2.0",
+        "version": "18.3.1",
         "category": "frontend"
       },
       {
@@ -47,16 +47,17 @@
     "runtime": null
   },
   "build": {
-    "buildCommand": "pnpm build",
+    "buildCommand": "cd /Users/seongtaehyeon/Desktop/moisam-client; npx tsc --noEmit -p tsconfig.app.json 2>&1 | grep -iE \"usePlatform|vite-env|ReactNativeWebView\" || echo \"✅ usePlatform 관련 타입 에러 없음\"",
     "testCommand": "pnpm test",
     "lintCommand": "pnpm lint",
     "devCommand": "pnpm dev",
     "scripts": {
-      "dev": "vite",
-      "build": "tsc -b && vite build",
+      "dev": "granite dev",
+      "build": "ait build",
       "lint": "eslint .",
       "preview": "vite preview",
-      "test": "jest --verbose"
+      "test": "jest --verbose",
+      "deploy": "ait deploy"
     }
   },
   "conventions": {
@@ -83,7 +84,7 @@
       "path": "dist",
       "purpose": "Distribution/build output",
       "fileCount": 5,
-      "lastAccessed": 1781612098914,
+      "lastAccessed": 1781944874720,
       "keyFiles": [
         "favicon.png",
         "favicon.svg",
@@ -96,7 +97,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 4,
-      "lastAccessed": 1781612098914,
+      "lastAccessed": 1781944874726,
       "keyFiles": [
         "favicon.png",
         "favicon.svg",
@@ -108,7 +109,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1781612098916,
+      "lastAccessed": 1781944874727,
       "keyFiles": [
         "vite-env.d.ts"
       ]
@@ -117,7 +118,7 @@
       "path": "dist/assets",
       "purpose": "Static assets",
       "fileCount": 18,
-      "lastAccessed": 1781612098916,
+      "lastAccessed": 1781944874728,
       "keyFiles": [
         "TMap-mEUW5Hcx.svg",
         "car-DErW1ZGb.webp",
@@ -128,7 +129,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 3,
-      "lastAccessed": 1781612098917,
+      "lastAccessed": 1781944874729,
       "keyFiles": [
         "App.tsx",
         "index.css",
@@ -139,21 +140,21 @@
       "path": "src/assets",
       "purpose": "Static assets",
       "fileCount": 1,
-      "lastAccessed": 1781612098917,
+      "lastAccessed": 1781944874729,
       "keyFiles": []
     },
     "src/components": {
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 0,
-      "lastAccessed": 1781612098917,
+      "lastAccessed": 1781944874729,
       "keyFiles": []
     },
     "src/lib": {
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 1,
-      "lastAccessed": 1781612098917,
+      "lastAccessed": 1781944874730,
       "keyFiles": [
         "utils.ts"
       ]
@@ -162,7 +163,7 @@
       "path": "src/pages",
       "purpose": "Page components",
       "fileCount": 14,
-      "lastAccessed": 1781612098917,
+      "lastAccessed": 1781944874731,
       "keyFiles": [
         "DetailPage.tsx",
         "FindPage.tsx",
@@ -191,8 +192,8 @@
     },
     {
       "path": "src/app/App.tsx",
-      "accessCount": 6,
-      "lastAccessed": 1781179306402,
+      "accessCount": 7,
+      "lastAccessed": 1781947294595,
       "type": "file"
     },
     {
@@ -208,15 +209,21 @@
       "type": "file"
     },
     {
-      "path": "src/shared/ui/AppInToss/index.ts",
-      "accessCount": 3,
-      "lastAccessed": 1781176221848,
+      "path": "src/shared/utils/kakaoLogin.ts",
+      "accessCount": 4,
+      "lastAccessed": 1781947280246,
       "type": "file"
     },
     {
-      "path": "src/shared/utils/kakaoLogin.ts",
+      "path": "src/shared/utils/index.ts",
+      "accessCount": 4,
+      "lastAccessed": 1781947888870,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/ui/AppInToss/index.ts",
       "accessCount": 3,
-      "lastAccessed": 1781178952782,
+      "lastAccessed": 1781176221848,
       "type": "file"
     },
     {
@@ -232,9 +239,15 @@
       "type": "file"
     },
     {
+      "path": "src/shared/ui/index.ts",
+      "accessCount": 3,
+      "lastAccessed": 1781947306822,
+      "type": "file"
+    },
+    {
       "path": "src/shared/api/api.ts",
-      "accessCount": 2,
-      "lastAccessed": 1781007099682,
+      "accessCount": 3,
+      "lastAccessed": 1781947396292,
       "type": "file"
     },
     {
@@ -247,12 +260,6 @@
       "path": "src/features/history/hooks/useUserInfo.ts",
       "accessCount": 2,
       "lastAccessed": 1781007101314,
-      "type": "file"
-    },
-    {
-      "path": "src/shared/ui/index.ts",
-      "accessCount": 2,
-      "lastAccessed": 1781008781229,
       "type": "file"
     },
     {
@@ -277,6 +284,24 @@
       "path": "src/shared/stores/userStore.ts",
       "accessCount": 2,
       "lastAccessed": 1781179306026,
+      "type": "file"
+    },
+    {
+      "path": "granite.config.ts",
+      "accessCount": 2,
+      "lastAccessed": 1781947272430,
+      "type": "file"
+    },
+    {
+      "path": "src/app/main.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1781947291541,
+      "type": "file"
+    },
+    {
+      "path": ".env",
+      "accessCount": 2,
+      "lastAccessed": 1781947301327,
       "type": "file"
     },
     {
@@ -340,12 +365,6 @@
       "type": "file"
     },
     {
-      "path": ".env",
-      "accessCount": 1,
-      "lastAccessed": 1781007003152,
-      "type": "file"
-    },
-    {
       "path": "src/features/history/service/api.ts",
       "accessCount": 1,
       "lastAccessed": 1781007022733,
@@ -355,12 +374,6 @@
       "path": "src/features/mapView/ui/common/LoginModal.tsx",
       "accessCount": 1,
       "lastAccessed": 1781007029673,
-      "type": "file"
-    },
-    {
-      "path": "src/app/main.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1781007031771,
       "type": "file"
     },
     {
@@ -439,6 +452,24 @@
       "path": "AppInToss.md",
       "accessCount": 1,
       "lastAccessed": 1781613108873,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1781947271383,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/utils/cookie.ts",
+      "accessCount": 1,
+      "lastAccessed": 1781947279838,
+      "type": "file"
+    },
+    {
+      "path": "src/shared/utils/gtag.ts",
+      "accessCount": 1,
+      "lastAccessed": 1781947280043,
       "type": "file"
     }
   ],
