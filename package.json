@@ -7,13 +7,13 @@
     "dev": "granite dev",
     "build": "ait build",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --outDir dist/web",
     "test": "jest --verbose",
     "deploy": "ait deploy"
   },
   "dependencies": {
     "@apps-in-toss/web-framework": "^2.9.0",
-    "@emotion/react": "^11",
+    "@emotion/react": "^11.14.0",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-popover": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.3",
