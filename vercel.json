@@ -1,3 +1,4 @@
 {
+  "outputDirectory": "dist/web",
   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
